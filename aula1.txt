@@ -1,0 +1,95 @@
+/////////////////////////////////////////// POO //////////////////////////////////////////////
+
+Programação Orientada a Objetos (POO) é um paradigma de programação que organiza o código usando objetos, que são instâncias de classes.
+
+Ao invés de pensar só em funções ou procedimentos, pensamos em coisas do mundo real como objetos que têm atributos (características) e métodos (comportamentos).
+
+
+1️⃣ Conceitos principais
+| Conceito       | O que significa                   | Exemplo                       |
+| -------------- | --------------------------------- | ----------------------------- |
+| **Classe**     | Molde ou “planta” do objeto       | `Carro`                       |
+| **Objeto**     | Instância da classe               | `meuCarro = new Carro()`      |
+| **Atributo**   | Característica do objeto          | `cor`, `modelo`, `ano`        |
+| **Método**     | Comportamento do objeto           | `acelerar()`, `frear()`       |
+| **Construtor** | Método especial que cria o objeto | `new Carro("vermelho", 2023)` |
+
+“classe é como a planta de uma casa, objeto é a casa construída”
+
+
+2️⃣ Por que usar POO?
+
+Facilita manutenção e organização do código.
+Aproxima o código do mundo real, tornando mais fácil de entender.
+Permite reuso de código com herança e polimorfismo.
+
+3️⃣ Analogia rápida para a aula
+Classe = planta de uma casa;
+Objeto = casa construída usando a planta;
+Atributos = número de quartos, tamanho, cor da parede;
+Métodos = abrir porta, ligar luz, pintar parede;
+
+
+/////////////////////////////////////////// JAVA //////////////////////////////////////////////
+
+
+//////////////////////////////////////// Os 4 pilares da POO /////////////////////////////////////////////////
+
+Na programação orientada a objeto temos 4 pilares principais, são eles:
+- Encapsulamento;
+- Abstração;
+- Herança;
+- Polimorfismo;
+
+Encapsulamento (primeiro pilar): proteger dados com modificadores de acesso (private, public, protected).
+
+Abstração => focar no essencial, ocultando detalhes complexos (ex.: usamos Carro.acelerar(), sem saber como o motor funciona internamente).
+
+Herança => Reaproveitamento de código (ex.: Carro e Moto herdam de Veiculo).
+
+Polimorfismo => mesma ação com comportamentos diferentes (ex.: método emitirSom() em Cachorro e Gato).
+
+
+/////////////////////////// Níveis(modificadores) de Acesso / Visibilidade ////////////////////////
+
+| Símbolo | Nome UML        | Java equivalente  | Quem pode acessar?                 |
+| ------- | --------------- | ----------------- | ---------------------------------- |
+| `+`     | Public          | `public`          | Todo mundo                         |
+| `-`     | Private         | `private`         | Apenas a própria classe            |
+| `#`     | Protected       | `protected`       | Classe + subclasses + mesmo pacote |
+| `~`     | Package/Default | (sem modificador) | Apenas classes no mesmo pacote     |
+
+
+
+
+
+/////////////////////////// Diagramas de classes UML ///////////////////////////
+
+Sinal antes do atributo/método:
+
++ → public
+- → private
+# → protected
+~ → package/default
+
+
++----------------+
+|    Veiculo     |
++----------------+
+| - modelo       |
+| - ano          |
++----------------+
+| + exibirInfo() |
++----------------+
+        ^
+        |
++---------------+
+|    Carro      |
++---------------+
+| - portas      |
++---------------+
+| + buzinar()   |
++---------------+
+
+
+
