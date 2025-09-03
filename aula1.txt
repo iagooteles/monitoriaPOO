@@ -32,6 +32,46 @@ Métodos = abrir porta, ligar luz, pintar parede;
 
 /////////////////////////////////////////// JAVA //////////////////////////////////////////////
 
+🔑 Principais características do Java
+1. Orientação a Objetos
+
+    Tudo em Java gira em torno de classes e objetos.
+    Implementa os 4 pilares da POO (abstração, encapsulamento, herança e polimorfismo).
+    Ajuda a organizar o código de forma modular, reutilizável e fácil de manter.
+
+
+2. Independência de Plataforma (WORA – Write Once, Run Anywhere)
+    O código Java é compilado para bytecode, que roda na JVM (Java Virtual Machine).
+    Isso significa que o mesmo programa pode rodar em diferentes sistemas operacionais sem precisar ser reescrito.
+
+Bytecode é um código intermediário, independente da plataforma, que fica entre o código-fonte (legível por humanos) e o código de máquina (legível pelo hardware). 
+
+
+
+3. Sintaxe Familiar
+    Inspirada em C e C++, mas com simplificações.
+    Curva de aprendizado suave para quem já conhece linguagens semelhantes.
+
+
+
+4. Tipagem Forte e Estática
+    As variáveis devem ter tipo definido em tempo de compilação.
+    Ajuda a evitar erros comuns de programação.
+
+    Estática => o tipo da variável deve ser declarado na sua criação.   
+        O compilador verifica se o tipo é respeitado antes da execução (em tempo de compilação).
+        Isso ajuda a detectar muitos erros cedo.
+
+    forte => uma variável não muda de tipo depois de declarada.
+        As conversões de tipos (casts) devem ser explícitas e seguras.
+        Isso evita ambiguidades ou “coerções automáticas perigosas” que existem em linguagens de tipagem fraca.
+
+
+9. Popularidade e Comunidade
+
+    Uma das linguagens mais usadas no mundo.
+    Enorme comunidade, documentação vasta e muitas bibliotecas open-source.
+
 
 //////////////////////////////////////// Os 4 pilares da POO /////////////////////////////////////////////////
 
@@ -42,15 +82,13 @@ Na programação orientada a objeto temos 4 pilares principais, são eles:
 - Polimorfismo;
 
 Encapsulamento (primeiro pilar): proteger dados com modificadores de acesso (private, public, protected).
-
 Abstração => focar no essencial, ocultando detalhes complexos (ex.: usamos Carro.acelerar(), sem saber como o motor funciona internamente).
-
 Herança => Reaproveitamento de código (ex.: Carro e Moto herdam de Veiculo).
-
 Polimorfismo => mesma ação com comportamentos diferentes (ex.: método emitirSom() em Cachorro e Gato).
 
 
 /////////////////////////// Níveis(modificadores) de Acesso / Visibilidade ////////////////////////
+
 
 | Símbolo | Nome UML        | Java equivalente  | Quem pode acessar?                 |
 | ------- | --------------- | ----------------- | ---------------------------------- |
