@@ -1,0 +1,24 @@
+Classe  => Aluno;
+Objetos => Aluno aluno1 = new Aluno();
+
+aluno1.verificarNota();
+
+atributos => 
+
+métodos   =>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

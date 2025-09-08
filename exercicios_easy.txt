@@ -9,7 +9,7 @@ Construtor que inicializa os atributos.
 
 Método exibirInfo() que imprime as informações.
 
-Desafio extra (se sobrar tempo):
+Desafio extra:
 Crie uma classe Monitor que herda de Aluno, adicionando o atributo disciplinaMonitoria.
 
 

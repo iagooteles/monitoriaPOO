@@ -1,1 +1,17 @@
 monitoria artigo gameficação
+
+__________________________________________________________________________________________________________________
+
+Exercício 01 => 
+
+Crie uma classe chamada ContaBancaria com os seguintes atributos privados:
+    numeroConta (String)
+    titular (String)
+    saldo (double)
+
+Regras:
+    O saldo deve iniciar em 0 quando a conta for criada.
+    Crie um construtor que receba o número da conta e o nome do titular.
+    Implemente getters para acessar os atributos e um setter apenas para o nome do titular (não pode alterar o número da conta).
+    Crie métodos depositar(double valor) e sacar(double valor) que atualizam o saldo (lembrar de validar se há saldo suficiente no saque).
+    Crie um método para visualizar os dados.
