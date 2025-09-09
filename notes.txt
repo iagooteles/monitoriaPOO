@@ -15,3 +15,26 @@ Regras:
     Implemente getters para acessar os atributos e um setter apenas para o nome do titular (não pode alterar o número da conta).
     Crie métodos depositar(double valor) e sacar(double valor) que atualizam o saldo (lembrar de validar se há saldo suficiente no saque).
     Crie um método para visualizar os dados.
+
+
+
+__________________________________________________________________________________________________________________
+
+MODIFICADORES DE ACESSO:
+
+| Símbolo | Nome UML        | Java equivalente  | Quem pode acessar?                 |
+| ------- | --------------- | ----------------- | ---------------------------------- |
+| `+`     | Public          | `public`          | Todo mundo                         |
+| `-`     | Private         | `private`         | Apenas a própria classe            |
+| `#`     | Protected       | `protected`       | Classe + subclasses + mesmo pacote |
+| `~`     | Package/Default | (sem modificador) | Apenas classes no mesmo pacote     |
+
+
+exercício:
+
+Estagiário
+_______________________
+public String nome;
+protected int idade;
+String curso;       // default
+private double bolsa;
