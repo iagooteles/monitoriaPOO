@@ -1,8 +1,12 @@
 /////////////////////////////////////////// POO //////////////////////////////////////////////
 
 Programação Orientada a Objetos (POO) é um paradigma de programação que organiza o código usando objetos, que são instâncias de classes.
+    POO Organiza o código em torno de objetos, que representam entidades do mundo real ou conceitos.
+    
 
 Ao invés de pensar só em funções ou procedimentos, pensamos em coisas do mundo real como objetos que têm atributos (características) e métodos (comportamentos).
+    Atributos → características (dados).
+    Métodos → comportamentos (ações).
 
 
 1️⃣ Conceitos principais
@@ -46,13 +50,9 @@ Métodos = abrir porta, ligar luz, pintar parede;
 
 Bytecode é um código intermediário, independente da plataforma, que fica entre o código-fonte (legível por humanos) e o código de máquina (legível pelo hardware). 
 
-
-
 3. Sintaxe Familiar
     Inspirada em C e C++, mas com simplificações.
     Curva de aprendizado suave para quem já conhece linguagens semelhantes.
-
-
 
 4. Tipagem Forte e Estática
     As variáveis devem ter tipo definido em tempo de compilação.
@@ -66,9 +66,7 @@ Bytecode é um código intermediário, independente da plataforma, que fica entr
         As conversões de tipos (casts) devem ser explícitas e seguras.
         Isso evita ambiguidades ou “coerções automáticas perigosas” que existem em linguagens de tipagem fraca.
 
-
 9. Popularidade e Comunidade
-
     Uma das linguagens mais usadas no mundo.
     Enorme comunidade, documentação vasta e muitas bibliotecas open-source.
 
@@ -96,9 +94,6 @@ Polimorfismo => mesma ação com comportamentos diferentes (ex.: método emitirS
 | `-`     | Private         | `private`         | Apenas a própria classe            |
 | `#`     | Protected       | `protected`       | Classe + subclasses + mesmo pacote |
 | `~`     | Package/Default | (sem modificador) | Apenas classes no mesmo pacote     |
-
-
-
 
 
 /////////////////////////// Diagramas de classes UML ///////////////////////////
@@ -129,5 +124,17 @@ Sinal antes do atributo/método:
 | + buzinar()   |
 +---------------+
 
+obs => O modificador static significa que o membro pertence à classe, e não ao objeto.
+=> Útil para valores e comportamentos compartilhados.
 
+deixar atributos privados => 
+Proteção dos dados
+Evita que qualquer código externo altere valores de forma incorreta.
+Controle de acesso
+Só a própria classe decide como os atributos podem ser lidos ou alterados (através de getters e setters).
+Validação
+Você pode colocar regras nos métodos de acesso. 
+Exemplo: só aceitar depósitos positivos em uma conta bancária. 👉 Assim, ninguém consegue “forçar” um valor negativo no saldo.
 
+Facilidade de manutenção
+Boas práticas
