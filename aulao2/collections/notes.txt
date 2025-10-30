@@ -1,0 +1,30 @@
+🧩 1. O que são Collections em Java
+
+Collections são estruturas de dados dinâmicas que armazenam grupos de objetos.
+Diferente de arrays, elas podem crescer ou diminuir dinamicamente, além de oferecerem métodos prontos para:
+
+    adicionar e remover elementos (add, remove)
+    percorrer elementos (forEach, iterator)
+    buscar, ordenar e filtrar elementos (contains, sort, stream)
+
+O Java fornece isso através do Java Collections Framework (JCF), que inclui interfaces, classes concretas e algoritmos.
+
+Vantagens:
+    Flexibilidade: se amanhã você quiser trocar para LinkedList, basta mudar a implementação:
+        List<String> nomes = new LinkedList<>();
+    O resto do código continua funcionando sem mudanças.
+    Polimorfismo: você pode passar a lista para qualquer método que aceite List, independente da implementação concreta.
+    Boas práticas de OO: programar contra interfaces, não contra classes concretas.
+
+
+Quando declarar como ArrayList diretamente?
+        ArrayList<String> nomes = new ArrayList<>();
+    Só faz sentido se você precisar usar métodos específicos do ArrayList que não estão na interface List.
+    Caso contrário, sempre prefira interface (List) para manter flexibilidade e desacoplamento.
+
+“Cada collection tem sua particularidade: algumas permitem duplicatas, outras não; algumas mantêm a ordem, outras não; algumas são mais rápidas para leitura, outras para inserção.
+
+Aaah iago, como vou saber qual collection usar na hora da prova?
+
+Se ele sempre dá exemplos com List, é bem provável que ele espere que você use List nos exercícios.
+O mais importante é entender o comportamento de collection, o seu sentido e que eles possuim métodos específicos para o agrupamento dos objetos.

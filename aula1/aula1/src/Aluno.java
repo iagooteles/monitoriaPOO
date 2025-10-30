@@ -1,8 +1,15 @@
 public class Aluno {
-    private String nome;
+    public String nome;
     private String matricula;
     private int idade;
     private String curso;
+
+    public Aluno() {
+        this.nome = "fulano";
+        this.matricula = "0000";
+        this.idade = 0;
+        this.curso = "none";
+    }
 
     public Aluno(String nome, String matricula, int idade, String curso) {
         this.nome = nome;
@@ -15,6 +22,10 @@ public class Aluno {
         return this.nome;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public String getMatricula() {
         return this.matricula;
     }
@@ -23,20 +34,16 @@ public class Aluno {
         return this.idade;
     }
 
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
     public String getCurso() {
         return this.curso;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public void setMatricula(String matricula) {
         this.matricula = matricula;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
     }
 
     public void setCurso(String curso) {

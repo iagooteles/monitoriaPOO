@@ -1,0 +1,20 @@
+A interface Pagamento é um contrato
+    Ela diz:
+    “Quem me implementar precisa saber processar um pagamento e emitir um recibo.”
+
+
+Polimorfismo em ação
+    Quando você cria o método:
+    public static void realizarCompra(Pagamento pagamento, double valor)
+    Você está dizendo:
+    “Eu não me importo com como o pagamento é feito — só quero que o objeto saiba processarPagamento e emitirRecibo.”
+    Ou seja, qualquer objeto que implemente Pagamento pode ser passado como argumento.
+
+
+
+Sobre o p3 no seu código
+    Pagamento p3 = new Pix("iagoexemplo2@banco.com");
+    realizarCompra(p3, 100.0);
+    Mesmo que p3 tenha sido declarado como Pagamento, o objeto real dentro dele é um Pix.
+    O compilador só exige que p3 saiba fazer o que a interface Pagamento manda — e o Pix sabe.
+    👉 Por isso o método realizarCompra() funciona normalmente com p3
