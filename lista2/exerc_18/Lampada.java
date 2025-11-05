@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Lampada extends DispositivoBase {
     private int intensidade;
 
@@ -18,4 +21,8 @@ public class Lampada extends DispositivoBase {
         }
     }
 
+    @Override
+    public void ligar() {
+        System.out.println("A lampada foi ligada...");
+    }
 }
