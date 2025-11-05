@@ -1,5 +1,10 @@
 Comparable é uma interface do Java que define uma ordem natural para objetos de uma classe. Ou seja, permite que objetos saibam como se comparar entre si para que possam ser ordenados.
 
+Como usar:
+    Sua classe implementa Comparable<MinhaClasse>
+    Você define o método compareTo com a lógica de comparação
+    Depois, pode usar Collections.sort(lista) ou Arrays.sort(array) para ordenar automaticamente
+
 input =>
 
 9
